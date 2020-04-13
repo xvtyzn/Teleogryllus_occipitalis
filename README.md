@@ -158,5 +158,10 @@ blastp -db ${database} -query Teleogryllus_occipitalis_geneset.fasta -outfmt 14 
 
 ### Interproscan
 ```
-interproscan.sh -i  Teleogryllus_occipitalis_geneset.fasta -b Teleogryllus_occipitalis --goterms --pathways -f xml -f tsv -f html -iprlookup -pa
+interproscan.sh -i Teleogryllus_occipitalis_geneset.fasta -b Teleogryllus_occipitalis --goterms --pathways -f xml -f tsv -f html -iprlookup -pa
+```
+
+### BBsketch
+```
+sendsketch.sh in=toccipitalis_genome_final_masked_HeaderEdit.fa mode=sequence out=toccipitalis_genome_final_masked_HeaderEdit_nt.txt format=3 address=nt
 ```
